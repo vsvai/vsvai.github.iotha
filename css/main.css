@@ -1,0 +1,25 @@
+h1 {
+  font-family: 'Courier New';
+  text-align: center;
+  color: white;
+}
+
+.s1 {
+  background: url("../images/IMG_20200103_200522.jpg");
+  background-size: cover;
+}
+
+.s2 {
+  background: url("../images/IMG_20200103_204249.jpg");
+  background-size: cover;
+}
+
+.s3 {
+  background: url("../images/IMG_20200105_021833.jpg");
+  background-size: cover;
+}
+
+span {
+  background: white !important;
+}
+/*# sourceMappingURL=main.css.map */
