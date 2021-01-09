@@ -1,24 +1,69 @@
+//colors
+$color1: rgb(255, 255, 255);
+$color2: rgb(0, 0, 0);
+$color3: whitesmoke;
+//fonts
+$font-med: 1.125rem;
+$font-sm:0.875rem;
+@import "./fullscreen";
+@import "./header";
+@import "./mixins";
 h1 {
-    font-family: 'Courier New';
-    text-align: center;
+    font-family: 'Square721 BT';
     color: white;
+    display: flex;
 }
 
-.s1 {
-    background: url('../images/IMG_20200103_200522.jpg');
-    background-size: cover;
-}
-
-.s2 {
-    background: url('../images/IMG_20200103_204249.jpg');
-    background-size: cover;
-}
-
-.s3 {
-    background: url('../images/IMG_20200105_021833.jpg');
-    background-size: cover;
+body {
+    background-color: $color2;
+    font-size: $font-med;
+    color: $color2;
 }
 
 span {
-    background: white !important;
+    background: $color1 !important;
+    color: $color2;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+//flexbox
+.flex {
+    display: flex;
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+button,
+.button {
+    padding: 1rem 1.875rem;
+    background: linear-gradient(to left, $color1, lightblue);
+    border-radius: 0px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 400;
+}
+
+//visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-down(large) {
+        display: none;
+    }
 }

@@ -1,0 +1,47 @@
+.header {
+    background-color: $color3;
+    nav {
+        padding: 3px;
+    }
+    &__logo {
+        //logo
+    }
+    &__menu {
+        //mobile MENU
+        >span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $color1;
+        }
+    }
+    &__links {
+        a {
+            position: relative;
+            font-size: $font-med;
+            color: $color2;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 3px;
+                left: 0;
+                right: 0;
+                bottom: -10px;
+            }
+            &:hover {
+                color: grey;
+                &::before {
+                    background: black;
+                }
+            }
+        }
+    }
+    &__cta {
+        font-size: $font-med;
+        color: $color2;
+    }
+}
