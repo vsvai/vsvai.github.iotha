@@ -67,3 +67,10 @@ button,
         display: none;
     }
 }
+
+.iframeclass {
+    @include breakpoint-down(medium) {
+        width: max-width;
+        height: 900;
+    }
+}

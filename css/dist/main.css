@@ -121,4 +121,11 @@ button,
     display: none;
   }
 }
+
+@media (max-width: 63.9375em) {
+  .iframeclass {
+    width: max-width;
+    height: 900;
+  }
+}
 /*# sourceMappingURL=main.css.map */
