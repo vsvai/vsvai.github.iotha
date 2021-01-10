@@ -1,6 +1,8 @@
 .s1 {
+  background-position: absolute;
   background: url("../../images/IMG_20200103_200522.jpg");
-  background-size: cover;
+  background-size: cover absolute;
+  background-repeat: no-repeat;
 }
 
 .s2 {
@@ -14,6 +16,7 @@
 }
 
 .header {
+  font-family: 'Square721 BT';
   background-color: whitesmoke;
 }
 
@@ -61,8 +64,35 @@
   color: black;
 }
 
+#mob-nav {
+  position: static;
+  bottom: 2em;
+  right: 2em;
+}
+
+#mob-nav ul {
+  list-style: none;
+}
+
+#mob-nav a {
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  padding: 0.5em 0;
+  transition: all 0.1s ease-out;
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+#mob-nav a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 h1 {
-  font-family: 'Square721 BT';
+  font-family: 'Shadows Into Light', cursive;
   color: white;
   display: flex;
 }
@@ -71,6 +101,8 @@ body {
   background-color: black;
   font-size: 1.125rem;
   color: black;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 span {
@@ -119,13 +151,6 @@ button,
 @media (max-width: null) {
   .hide-for-desktop {
     display: none;
-  }
-}
-
-@media (max-width: 63.9375em) {
-  .iframeclass {
-    width: max-width;
-    height: 900;
   }
 }
 /*# sourceMappingURL=main.css.map */

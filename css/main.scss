@@ -8,8 +8,9 @@ $font-sm:0.875rem;
 @import "./fullscreen";
 @import "./header";
 @import "./mixins";
+@import "./mobilenav";
 h1 {
-    font-family: 'Square721 BT';
+    font-family: 'Shadows Into Light', cursive;
     color: white;
     display: flex;
 }
@@ -18,6 +19,8 @@ body {
     background-color: $color2;
     font-size: $font-med;
     color: $color2;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 span {
@@ -65,12 +68,5 @@ button,
 .hide-for-desktop {
     @include breakpoint-down(large) {
         display: none;
-    }
-}
-
-.iframeclass {
-    @include breakpoint-down(medium) {
-        width: max-width;
-        height: 900;
     }
 }

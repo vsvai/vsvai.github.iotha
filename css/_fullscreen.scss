@@ -1,6 +1,8 @@
 .s1 {
+    background-position: absolute;
     background: url('../../images/IMG_20200103_200522.jpg');
-    background-size: cover;
+    background-size: cover absolute;
+    background-repeat: no-repeat;
 }
 
 .s2 {

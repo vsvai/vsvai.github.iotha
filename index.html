@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vsvai</title>
-    <link rel="shortcut icon" href="https://www.freeiconspng.com/uploads/github-logo-icon-24.png">
+    <link rel="shortcut icon" href="/images/logo.ico">
     <link rel="stylesheet" href="css\dist\main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="import" href="page/about.html">
 </head>
 
@@ -18,36 +18,31 @@
     <header class="header">
         <nav class="flex flex-jc-sb">
             <a href="/" class="header__logo">
-                <img src="https://img.icons8.com/ios/50/000000/under-computer.png" alt="logo">
-
+                <img src="/images/logo.ico" alt="logo" height="50px">
             </a>
             <a href="#" class="header__menu hide-for-desktop ">
-
-
             </a>
             <div class="header__links hide-for-mobile ">
                 <a href="# ">Porfolio</a><a href="# ">Projects</a><a href="# ">Apps</a><a href="page/about.html ">Contact</a>
                 <button href="# " class="button header__cta hide-for-mobile ">buy me a coffee</button>
             </div>
-
-
         </nav>
     </header>
-
-
-
-    <section>
-        <div>
+    <div id="mob-nav" class="hide-for-desktop s1 ">
+        <section>
             <h1>VSVAI.com</h1>
-        </div>
-        <iframe class="iframeclass" src=" page/about.html " height="600em " width="400em "></iframe>
-    </section>
-    <div class="flex-parent ">
-        <div class="flex-child ">
+            <iframe class="hide-for-mobile" src=" page/about.html " height="600em " width="350em "></iframe>
+            <iframe class="hide-for-mobile" src=" page/about.html " height="600em " width="350em "></iframe>
 
-        </div>
+        </section>
+
+
+        <ul>
+            <li><a target="_top" href="/">Follow on Twitter</a></li>
+            <li><a target="_top" href="/">Read Article</a></li>
+            <li><a target="_top" href="/">GitHub Repo</a></li>
+        </ul>
     </div>
-
 
 </body>
 
