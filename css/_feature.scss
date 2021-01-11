@@ -1,0 +1,21 @@
+.feature {
+    &__grid {
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+    }
+    &__item {
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+    }
+    &__icon {
+        //
+    }
+    &__title {
+        //
+    }
+    &__description {
+        //
+    }
+}

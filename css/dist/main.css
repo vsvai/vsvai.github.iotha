@@ -23,6 +23,8 @@
 
 .header nav {
   color: black;
+  top: 0;
+  width: 100%;
 }
 
 .header__logo {
@@ -84,17 +86,35 @@
   color: black;
 }
 
+@media (min-width: 64em) {
+  .feature__grid {
+    display: flex;
+  }
+}
+
+@media (min-width: 64em) {
+  .feature__item {
+    display: flex;
+  }
+}
+
 h1 {
   font-family: 'Shadows Into Light', cursive;
   color: white;
   display: flex;
 }
 
+i {
+  color: black;
+  text-align: center;
+  height: 100%;
+}
+
 body {
   font-size: 0.9rem;
   font-family: 'Roboto', sans-serif;
   font-family: 'Shadows Into Light', cursive;
-  background-color: black;
+  background-color: white;
   background-position: absolute;
   background-size: cover absolute;
   height: relative;
@@ -137,13 +157,13 @@ button,
   font-weight: 200;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media (max-width: null) {
+@media (max-width: 63.9375em) {
   .hide-for-desktop {
     display: none;
   }

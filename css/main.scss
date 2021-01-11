@@ -9,17 +9,24 @@ $font-sm:0.5rem;
 @import "./header";
 @import "./mixins";
 @import "./mobilenav";
+@import "./feature";
 h1 {
     font-family: 'Shadows Into Light', cursive;
     color: white;
     display: flex;
 }
 
+i {
+    color: $color2;
+    text-align: center;
+    height: 100%;
+}
+
 body {
     font-size: $font-med;
     font-family: 'Roboto', sans-serif;
     font-family: 'Shadows Into Light', cursive;
-    background-color: black;
+    background-color: white;
     background-position: absolute;
     background-size: cover absolute;
     height: relative;
@@ -62,13 +69,13 @@ button,
 
 //visibility
 .hide-for-mobile {
-    @include breakpoint-down(medium) {
+    @include breakpoint-down(small) {
         display: none;
     }
 }
 
 .hide-for-desktop {
-    @include breakpoint-down(large) {
+    @include breakpoint-down(medium) {
         display: none;
     }
 }
