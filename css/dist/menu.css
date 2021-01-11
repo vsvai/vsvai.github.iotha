@@ -1,9 +1,9 @@
 .menu-item,
 .menu-open-button {
-    background: #eeeeee;
+    background: #0b8dc9;
     border-radius: 100%;
-    width: 80px;
-    height: 80px;
+    width: 55px;
+    height: 55px;
     margin-left: -40px;
     position: absolute;
     color: #ffffff;
@@ -70,11 +70,12 @@
 .menu {
     position: fixed;
     margin: auto;
-    width: 80px;
-    height: 80px;
-    bottom: -2px;
-    right: 5px;
+    width: 50px;
+    height: 50px;
+    bottom: -9px;
+    right: 2px;
     box-sizing: border-box;
+    top: 820px;
 }
 
 
@@ -83,7 +84,7 @@
 } */
 
 .menu-item:hover {
-    background: #dd1e1e;
+    background: white;
     color: #3290b1;
 }
 
@@ -98,15 +99,15 @@
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -webkit-transition-duration: 400ms;
     transition-duration: 400ms;
-    -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+    -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
     transform: scale(1.1, 1.1) translate3d(0, 0, 0);
     cursor: pointer;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
 }
 
 .menu-open-button:hover {
-    -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
-    transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+    -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+    transform: scale(1, 1) translate3d(0, 0, 0);
 }
 
 .menu-open:checked+.menu-open-button {
@@ -126,21 +127,21 @@
 .menu-open:checked~.menu-item:nth-child(3) {
     transition-duration: 180ms;
     -webkit-transition-duration: 180ms;
-    -webkit-transform: translate3d(0.08361px, -104.99997px, 0);
+    -webkit-transform: translate3d(1, 1, 0);
     transform: translate3d(0.08361px, -300.99997px, 0);
 }
 
 .menu-open:checked~.menu-item:nth-child(4) {
     transition-duration: 180ms;
     -webkit-transition-duration: 180ms;
-    -webkit-transform: translate3d(1px, 1px, 1);
+    -webkit-transform: translate3d(0.8px, 0.8px, 0.8);
     transform: translate3d(0.08361px, -200px, 0);
 }
 
 .menu-open:checked~.menu-item:nth-child(5) {
     transition-duration: 180ms;
     -webkit-transition-duration: 180ms;
-    -webkit-transform: translate3d(10px, 10px, 1);
+    -webkit-transform: translate3d(1px, 1px, 1);
     transform: translate3d(1px, -100px, 10px);
 }
 
@@ -177,32 +178,10 @@
     text-shadow: none;
 }
 
-.purple {
-    background-color: #c49cde;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-
-.purple:hover {
-    color: #c49cde;
-    text-shadow: none;
-}
-
-.orange {
-    background-color: #fc913a;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-
-.orange:hover {
-    color: #fc913a;
-    text-shadow: none;
-}
-
 .lightblue {
     background-color: #62c2e4;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 3px 3px 0 0 rgba(255, 255, 255, 0.14);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 .lightblue:hover {
