@@ -2,8 +2,8 @@
 .menu-open-button {
     background: #0b8dc9;
     border-radius: 100%;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     margin-left: -40px;
     position: absolute;
     color: #ffffff;
@@ -72,10 +72,10 @@
     margin: auto;
     width: 50px;
     height: 50px;
-    bottom: -9px;
-    right: 2px;
+    bottom: -3px;
+    right: -20px;
     box-sizing: border-box;
-    top: 820px;
+    top: 900px;
 }
 
 
@@ -128,21 +128,21 @@
     transition-duration: 180ms;
     -webkit-transition-duration: 180ms;
     -webkit-transform: translate3d(1, 1, 0);
-    transform: translate3d(0.08361px, -300.99997px, 0);
+    transform: translate3d(0.08361px, -180px, 0);
 }
 
 .menu-open:checked~.menu-item:nth-child(4) {
     transition-duration: 180ms;
     -webkit-transition-duration: 180ms;
     -webkit-transform: translate3d(0.8px, 0.8px, 0.8);
-    transform: translate3d(0.08361px, -200px, 0);
+    transform: translate3d(0.08361px, -120px, 0);
 }
 
 .menu-open:checked~.menu-item:nth-child(5) {
     transition-duration: 180ms;
     -webkit-transition-duration: 180ms;
     -webkit-transform: translate3d(1px, 1px, 1);
-    transform: translate3d(1px, -100px, 10px);
+    transform: translate3d(1px, -60px, 10px);
 }
 
 .blue {
