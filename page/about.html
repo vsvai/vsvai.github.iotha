@@ -7,6 +7,7 @@
     <title>vsvai</title>
     <link rel="shortcut icon" href="https://www.freeiconspng.com/uploads/github-logo-icon-24.png">
     <link rel="stylesheet" href="..\css\dist\main.css">
+    <link rel="stylesheet" href="..\css\dist\menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
 
 </head>
@@ -33,7 +34,19 @@
 
         </div>
     </div>
+    <nav class="menu hide-for-desktop">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+         <span class="lines line-1"></span>
+         <span class="lines line-2"></span>
+         <span class="lines line-3"></span>
+       </label>
 
+        <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
+        <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+        <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+
+    </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
     <script>
         new fullpage('#fullpage', {

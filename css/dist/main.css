@@ -18,10 +18,18 @@
 .header {
   font-family: 'Square721 BT';
   background-color: whitesmoke;
+  color: black;
 }
 
 .header nav {
-  padding: 3px;
+  color: black;
+}
+
+.header__logo {
+  padding-top: 2.4px;
+  margin: 0.14em;
+  float: none;
+  text-align: center;
 }
 
 .header__menu > span {
@@ -31,9 +39,21 @@
   background-color: white;
 }
 
+.header__links {
+  padding-top: 3px;
+  padding-right: 10px;
+}
+
+.header__links button {
+  font-family: 'Shadows Into Light', cursive;
+  position: relative;
+  font-size: 0.9rem;
+  color: black;
+}
+
 .header__links a {
   position: relative;
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   color: black;
 }
 
@@ -60,35 +80,8 @@
 }
 
 .header__cta {
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   color: black;
-}
-
-#mob-nav {
-  position: static;
-  bottom: 2em;
-  right: 2em;
-}
-
-#mob-nav ul {
-  list-style: none;
-}
-
-#mob-nav a {
-  color: white;
-  text-decoration: none;
-  text-align: right;
-  padding: 0.5em 0;
-  transition: all 0.1s ease-out;
-  display: block;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-
-#mob-nav a:hover {
-  color: rgba(255, 255, 255, 0.5);
 }
 
 h1 {
@@ -98,11 +91,13 @@ h1 {
 }
 
 body {
-  background-color: black;
-  font-size: 1.125rem;
-  color: black;
+  font-size: 0.9rem;
   font-family: 'Roboto', sans-serif;
   font-family: 'Shadows Into Light', cursive;
+  background-color: black;
+  background-position: absolute;
+  background-size: cover absolute;
+  height: relative;
 }
 
 span {
@@ -135,11 +130,11 @@ a:hover {
 button,
 .button {
   padding: 1rem 1.875rem;
-  background: linear-gradient(to left, white, lightblue);
+  background: #ff3d78;
   border-radius: 0px;
   cursor: pointer;
   border: 0;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 @media (max-width: 63.9375em) {

@@ -1,11 +1,16 @@
 .header {
     font-family: 'Square721 BT';
     background-color: $color3;
+    color: black;
     nav {
-        padding: 3px;
+        color: black;
     }
     &__logo {
         //logo
+        padding-top: 2.4px;
+        margin: 0.14em;
+        float: none;
+        text-align: center;
     }
     &__menu {
         //mobile MENU
@@ -17,6 +22,14 @@
         }
     }
     &__links {
+        padding-top: 3px;
+        padding-right: 10px;
+        button {
+            font-family: 'Shadows Into Light', cursive;
+            position: relative;
+            font-size: $font-med;
+            color: $color2;
+        }
         a {
             position: relative;
             font-size: $font-med;

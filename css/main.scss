@@ -3,8 +3,8 @@ $color1: rgb(255, 255, 255);
 $color2: rgb(0, 0, 0);
 $color3: whitesmoke;
 //fonts
-$font-med: 1.125rem;
-$font-sm:0.875rem;
+$font-med: 0.9rem;
+$font-sm:0.5rem;
 @import "./fullscreen";
 @import "./header";
 @import "./mixins";
@@ -16,11 +16,13 @@ h1 {
 }
 
 body {
-    background-color: $color2;
     font-size: $font-med;
-    color: $color2;
     font-family: 'Roboto', sans-serif;
     font-family: 'Shadows Into Light', cursive;
+    background-color: black;
+    background-position: absolute;
+    background-size: cover absolute;
+    height: relative;
 }
 
 span {
@@ -51,11 +53,11 @@ a:hover {
 button,
 .button {
     padding: 1rem 1.875rem;
-    background: linear-gradient(to left, $color1, lightblue);
+    background: rgb(255, 61, 120);
     border-radius: 0px;
     cursor: pointer;
     border: 0;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 //visibility
