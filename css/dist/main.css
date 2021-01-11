@@ -92,6 +92,10 @@
   }
 }
 
+.feature__item {
+  border: 2px solid grey;
+}
+
 @media (min-width: 64em) {
   .feature__item {
     display: flex;
@@ -163,7 +167,7 @@ button,
   }
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 50em) {
   .hide-for-desktop {
     display: none;
   }
