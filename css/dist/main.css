@@ -99,6 +99,7 @@
 @media (min-width: 64em) {
   .feature__item {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 

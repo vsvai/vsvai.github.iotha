@@ -8,6 +8,7 @@
         border: 2px solid grey;
         @include breakpoint-up(large) {
             display: flex;
+            flex-wrap: wrap;
         }
     }
     &__icon {
