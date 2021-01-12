@@ -14,7 +14,7 @@
         @include breakpoint-down(small) {
             display: flex;
             flex-wrap: wrap;
-            flex: 2 2;
+            flex: 20px;
         }
     }
     &__item {
@@ -25,9 +25,9 @@
         margin-right: 40px;
         justify-content: center;
         flex-direction: column;
-        @include breakpoint-up(large) {
+        @include breakpoint-down(small) {
             margin-bottom: 20px;
-            margin-right: 10px;
+            margin-right: 1px;
         }
     }
     &__icon {

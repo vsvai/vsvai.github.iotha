@@ -110,7 +110,7 @@
   .feature__grid {
     display: flex;
     flex-wrap: wrap;
-    flex: 2 2;
+    flex: 20px;
   }
 }
 
@@ -124,10 +124,10 @@
   flex-direction: column;
 }
 
-@media (min-width: 64em) {
+@media (max-width: 39.9375em) {
   .feature__item {
     margin-bottom: 20px;
-    margin-right: 10px;
+    margin-right: 1px;
   }
 }
 
