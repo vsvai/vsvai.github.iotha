@@ -13,20 +13,19 @@
         }
         @include breakpoint-down(small) {
             display: flex;
-            flex-wrap: wrap;
-            flex: 20px;
+            flex: 2 2 20px;
+            flex-flow: row wrap;
         }
     }
     &__item {
         padding: 20px;
-        margin: 20px;
+        margin: 2px;
         background-color: rgb(44, 187, 243);
-        margin-bottom: 20px;
-        margin-right: 40px;
-        justify-content: center;
+        margin-bottom: 2px;
+        margin-right: 2px;
+        justify-content: center space-around;
         flex-direction: column;
         @include breakpoint-down(small) {
-            margin-bottom: 20px;
             margin-right: 1px;
         }
     }
@@ -38,5 +37,18 @@
     }
     &__description {
         //
+    }
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    .card {
+        display: inline-block;
+    }
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
