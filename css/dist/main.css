@@ -204,13 +204,13 @@ button,
   font-weight: 200;
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 50em) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media (max-width: 50em) {
+@media (min-width: 40em) {
   .hide-for-desktop {
     display: none;
   }
