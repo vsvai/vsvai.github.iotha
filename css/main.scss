@@ -26,7 +26,7 @@ body {
     font-size: $font-med;
     font-family: 'Roboto', sans-serif;
     font-family: 'Shadows Into Light', cursive;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     background-position: absolute;
     background-size: cover absolute;
     height: relative;
@@ -59,12 +59,11 @@ a:hover {
 
 button,
 .button {
-    padding: 1rem 1.875rem;
+    padding: 0.7rem 1.65rem;
     background: rgb(255, 61, 120);
-    border-radius: 0px;
+    border-radius: 4px;
     cursor: pointer;
-    border: 0;
-    font-weight: 200;
+    border: 14;
 }
 
 //visibility
@@ -78,4 +77,10 @@ button,
     @include breakpoint-up(medium) {
         display: none;
     }
+}
+
+//text
+.banner {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin-top: 0;
 }

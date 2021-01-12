@@ -1,11 +1,13 @@
 .header {
     font-family: 'Square721 BT';
-    background-color: $color3;
+    background-color: grey;
     color: black;
+    margin: -0.24em;
     nav {
         color: black;
         top: 0;
         width: 100%;
+        margin: 5px;
     }
     &__logo {
         //logo
@@ -35,7 +37,7 @@
         a {
             position: relative;
             font-size: $font-med;
-            color: $color2;
+            color: $color1;
             &:not(:last-child) {
                 margin-right: 30px;
             }
@@ -49,7 +51,7 @@
                 bottom: -10px;
             }
             &:hover {
-                color: grey;
+                color: red;
                 &::before {
                     background: black;
                 }
