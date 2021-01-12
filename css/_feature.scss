@@ -1,14 +1,33 @@
 .feature {
     &__grid {
-        @include breakpoint-up(large) {
-            display: flex;
-        }
-    }
-    &__item {
-        border: 2px solid grey;
+        justify-content: center;
         @include breakpoint-up(large) {
             display: flex;
             flex-wrap: wrap;
+            flex: 1 1 50%;
+        }
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 2 2 50%;
+        }
+        @include breakpoint-down(small) {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 2 2;
+        }
+    }
+    &__item {
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(44, 187, 243);
+        margin-bottom: 20px;
+        margin-right: 40px;
+        justify-content: center;
+        flex-direction: column;
+        @include breakpoint-up(large) {
+            margin-bottom: 20px;
+            margin-right: 10px;
         }
     }
     &__icon {
