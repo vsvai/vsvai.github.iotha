@@ -17,7 +17,7 @@
         }
     }
     &__item {
-        padding: 15px;
+        padding: 10px;
         overflow: hidden;
         background-color: #E6E6E6;
         margin-bottom: 30px;
@@ -42,6 +42,7 @@
     }
     &__icon {
         justify-content: center;
+        padding: 0px;
         //
     }
     &__title {

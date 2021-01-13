@@ -16,16 +16,17 @@
 }
 
 .page1 {
-    background: url('https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg');
+    //background: url('https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg');
     background-size: cover;
     height: 100%;
     width: 100%;
     justify-content: center;
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(224, 222, 222);
     p {
         justify-content: bottom;
-        text-align: right bottom;
+        text-align: right;
+        font-size: 25px;
     }
 }
 

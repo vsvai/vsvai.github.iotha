@@ -14,6 +14,7 @@ h1 {
     font-family: 'Shadows Into Light', cursive;
     color: white;
     display: flex;
+    margin: 0px;
 }
 
 i {
@@ -83,7 +84,7 @@ button,
     margin-top: 50px;
     justify-content: center;
     text-align: bottom;
-    font-size: 30px;
+    font-size: 50px;
     padding: 50px;
     justify-content: center;
     @include breakpoint-down(medium) {
@@ -98,4 +99,10 @@ button,
         text-align: top;
         margin-top: 100px;
     }
+}
+
+code {
+    font-family: 'Square721 BT';
+    font-size: 13px;
+    color: black;
 }

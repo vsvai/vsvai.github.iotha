@@ -16,18 +16,18 @@
 }
 
 .page1 {
-  background: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
   justify-content: center;
   text-align: center;
-  background-color: black;
+  background-color: #e0dede;
 }
 
 .page1 p {
   justify-content: bottom;
-  text-align: right bottom;
+  text-align: right;
+  font-size: 25px;
 }
 
 .data {
@@ -47,7 +47,7 @@
   color: black;
   top: 0;
   width: 100%;
-  margin: -4px;
+  margin: 0px;
 }
 
 .header__logo {
@@ -137,7 +137,7 @@
 }
 
 .feature__item {
-  padding: 15px;
+  padding: 10px;
   overflow: hidden;
   background-color: #E6E6E6;
   margin-bottom: 30px;
@@ -169,6 +169,7 @@
 
 .feature__icon {
   justify-content: center;
+  padding: 0px;
 }
 
 .scrolling-wrapper {
@@ -219,6 +220,7 @@ h1 {
   font-family: 'Shadows Into Light', cursive;
   color: white;
   display: flex;
+  margin: 0px;
 }
 
 i {
@@ -288,7 +290,7 @@ button,
   margin-top: 50px;
   justify-content: center;
   text-align: bottom;
-  font-size: 30px;
+  font-size: 50px;
   padding: 50px;
   justify-content: center;
 }
@@ -312,5 +314,11 @@ button,
     text-align: top;
     margin-top: 100px;
   }
+}
+
+code {
+  font-family: 'Square721 BT';
+  font-size: 13px;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
