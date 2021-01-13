@@ -26,10 +26,8 @@ body {
     font-size: $font-med;
     font-family: 'Roboto', sans-serif;
     font-family: 'Shadows Into Light', cursive;
-    background-color: rgb(0, 0, 0);
-    background-position: absolute;
-    background-size: cover absolute;
-    height: relative;
+    position: auto;
+    margin: 0em;
 }
 
 span {

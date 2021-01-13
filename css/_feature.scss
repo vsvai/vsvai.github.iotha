@@ -28,6 +28,7 @@
         width: 250px;
         @include breakpoint-down(small) {
             width: 450px;
+            justify-content: center;
         }
         &:hover {
             transform: scale(1.05);

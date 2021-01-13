@@ -35,14 +35,14 @@
   font-family: 'Square721 BT';
   background-color: grey;
   color: black;
-  margin: -0.24em;
+  margin: 0em;
 }
 
 .header nav {
   color: black;
   top: 0;
   width: 100%;
-  margin: 5px;
+  margin: -4px;
 }
 
 .header__logo {
@@ -146,6 +146,7 @@
 @media (max-width: 39.9375em) {
   .feature__item {
     width: 450px;
+    justify-content: center;
   }
 }
 
@@ -222,10 +223,8 @@ body {
   font-size: 0.9rem;
   font-family: 'Roboto', sans-serif;
   font-family: 'Shadows Into Light', cursive;
-  background-color: black;
-  background-position: absolute;
-  background-size: cover absolute;
-  height: relative;
+  position: auto;
+  margin: 0em;
 }
 
 span {
