@@ -16,13 +16,18 @@
 }
 
 .page1 {
-  background: url("../../images/logo.png");
+  background: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
   justify-content: center;
   text-align: center;
   background-color: black;
+}
+
+.page1 p {
+  justify-content: bottom;
+  text-align: right bottom;
 }
 
 .data {
@@ -145,8 +150,7 @@
 
 @media (max-width: 39.9375em) {
   .feature__item {
-    width: 450px;
-    justify-content: center;
+    width: 300px;
   }
 }
 
@@ -161,6 +165,10 @@
 
 .feature__item p {
   text-align: left;
+}
+
+.feature__icon {
+  justify-content: center;
 }
 
 .scrolling-wrapper {
@@ -279,7 +287,7 @@ button,
   font-family: 'Shadows Into Light', cursive;
   margin-top: 50px;
   justify-content: center;
-  text-align: center;
+  text-align: bottom;
   font-size: 30px;
   padding: 50px;
   justify-content: center;
