@@ -81,6 +81,23 @@ button,
 
 //text
 .banner {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    margin-top: 0;
+    font-family: 'Shadows Into Light', cursive;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+    justify-content: center;
+    @include breakpoint-down(medium) {
+        margin-top: -50px;
+        padding: -50px;
+    }
+    @include breakpoint-down(small) {
+        margin-top: -50px;
+        padding: -50px;
+    }
+    @include breakpoint-up(medium) {
+        text-align: top;
+        margin-top: 100px;
+    }
 }

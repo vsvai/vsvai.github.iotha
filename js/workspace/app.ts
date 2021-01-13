@@ -10,3 +10,6 @@ if (prevScrollpos > currentScrollPos) {
     }
     prevScrollpos = currentScrollPos;
 }
+
+
+document.getElementById("data").style.display="block";
