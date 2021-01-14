@@ -174,7 +174,7 @@
 
 .scrolling-wrapper {
   overflow-x: scroll;
-  margin: -8px;
+  margin: 0px;
   padding: 20px;
   background: white;
   overflow-y: hidden;
@@ -233,7 +233,7 @@ body {
   font-size: 0.9rem;
   font-family: 'Roboto', sans-serif;
   font-family: 'Shadows Into Light', cursive;
-  position: auto;
+  position: relative;
   margin: 0em;
 }
 

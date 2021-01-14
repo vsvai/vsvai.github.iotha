@@ -18,19 +18,19 @@ document.body.addEventListener('click', (event) => {
 
 function handleSectionTrigger(event) {
     hideAllSectionsAndDeselectButtons()
-    alert(event.target.dataset.section);
-    alert(event.target.classList)
+    console.log(event.target.dataset.section);
+    console.log(event.target.classList)
         // Highlight clicked button and show view
         //event.target.classList.add('is-selected')
 
     // Display the current section
     const sectionId = `${event.target.dataset.section}-section`
-    alert(sectionId);
+    console.log(sectionId);
     //document.getElementById(sectionId).classList.add('is-shown')
 
     // Save currently active button in localStorage
     const buttonId = event.target.getAttribute('id')
-    alert(buttonId)
+    console.log(buttonId)
 
 }
 
