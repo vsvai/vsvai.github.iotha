@@ -21,12 +21,12 @@ function handleSectionTrigger(event) {
     alert(event.target.dataset.section);
     alert(event.target.classList)
         // Highlight clicked button and show view
-    event.target.classList.add('is-selected')
+        //event.target.classList.add('is-selected')
 
     // Display the current section
     const sectionId = `${event.target.dataset.section}-section`
     alert(sectionId);
-    document.getElementById(sectionId).classList.add('is-shown')
+    //document.getElementById(sectionId).classList.add('is-shown')
 
     // Save currently active button in localStorage
     const buttonId = event.target.getAttribute('id')
@@ -39,14 +39,14 @@ function activateDefaultSection() {
 }
 
 function showMainContent() {
-    document.querySelector('.js-nav').classList.add('is-shown')
-    document.querySelector('.js-content').classList.add('is-shown')
+    //document.querySelector('.js-nav').classList.add('is-shown')
+    //document.querySelector('.js-content').classList.add('is-shown')
 }
 
 function handleModalTrigger(event) {
     hideAllModals()
     const modalId = `${event.target.dataset.modal}-modal`
-    document.getElementById(modalId).classList.add('is-shown')
+        //document.getElementById(modalId).classList.add('is-shown')
 }
 
 function hideAllModals() {
@@ -60,17 +60,17 @@ function hideAllModals() {
 function hideAllSectionsAndDeselectButtons() {
     const sections = document.querySelectorAll('.js-section.is-shown')
     Array.prototype.forEach.call(sections, (section) => {
-        section.classList.remove('is-shown')
+        //section.classList.remove('is-shown')
     })
 
     const buttons = document.querySelectorAll('.nav-button.is-selected')
     Array.prototype.forEach.call(buttons, (button) => {
-        button.classList.remove('is-selected')
+        //button.classList.remove('is-selected')
     })
 }
 
 function displayAbout() {
-    document.querySelector('#about-modal').classList.add('is-shown')
+    //document.querySelector('#about-modal').classList.add('is-shown')
 }
 
 const links = document.querySelectorAll('link[rel="import"]')
