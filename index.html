@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vsvai</title>
+    <link rel="import" href="page/about.html">
     <link rel="shortcut icon" href="/images/logo.ico">
     <link rel="stylesheet" href="css\dist\main.css">
     <link rel="stylesheet" href="css\dist\menu.css">
@@ -12,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="import" href="page/about.html">
+    <link rel="import" href="./page/about.html" id="data-section">
 </head>
 
 <body>
@@ -20,16 +21,16 @@
     <header class="header">
         <nav id="navbar" class="flex flex-jc-sb">
             <a href="/" class="header__logo">
-                <img src="https://img.icons8.com/bubbles/50/000000/screenshot.png" />
+                <img src="images\vsvai.png" alt="logo" height="50px" />
                 <!-- <img class="header__logo" src="https://img.icons8.com/ios/50/000000/coffee--v2.png" alt="logo" height="50px"> -->
             </a>
             <a href="#" class="header__menu hide-for-desktop ">
             </a>
             <div class="header__links  ">
                 <a href="# " class="hide-for-mobile">Porfolio</a>
-                <a href="# " class="hide-for-mobile">Projects</a>
-                <a href="# " class="hide-for-mobile">Apps</a>
-                <a href="page/about.html " class="hide-for-mobile">Article</a>
+                <a href="# " data-section="project" class="hide-for-mobile">Projects</a>
+                <a href="# " data-section="app" class="hide-for-mobile">Apps</a>
+                <a href="# " id="button-about" data-section="about" class="hide-for-mobile">Article</a>
                 <a href="https://www.buymeacoffee.com/vsvai" target="blank">
                     <button class="button header__cta ">buy me a coffee</button>
                 </a>
@@ -49,10 +50,12 @@
         <a href="#" class="menu-item red"></a>
 
     </nav>
+    <main class="content js-content">
+
+    </main>
     <section class="data">
         <section class="page1 features">
-            <div class="feature__grid"> <img src="images\gummy-walkie-talkie.png" style="width: 35%;
-        height: auto;">
+            <div class="feature__grid"> <img src="images\gummy-walkie-talkie.png" style="width: 35%;">
                 <h3 class="banner" id="react1">Welcome Dosto kasan ba</br>
                 </h3>
                 <p class="hide-for-mobile">#this is a website for everyone develop by vsvai from India <br>#Currently, I am about to finish last semester./ </p>
@@ -222,7 +225,7 @@
         </div>
     </footer>
 
-    <script src="js\app.js "></script>
+    <script src="./js/app.js "></script>
 
 </body>
 
