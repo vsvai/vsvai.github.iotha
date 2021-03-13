@@ -1,10 +1,10 @@
 //colors
-$color1: rgb(255, 255, 255);
+$color1: whitesmoke;
 $color2: rgb(0, 0, 0);
-$color3: whitesmoke;
+$color3: rgb(255, 255, 255);
 //fonts
 $font-med: 0.9rem;
-$font-sm:0.5rem;
+$font-sm:0.8rem;
 @import "./fullscreen";
 @import "./header";
 @import "./mixins";

@@ -38,7 +38,7 @@
 
 .header {
   font-family: 'Square721 BT';
-  background-color: grey;
+  background-color: rgba(51, 51, 51, 0.568);
   color: black;
   margin: 0em;
 }
@@ -55,18 +55,21 @@
   left: 0px;
   margin-left: 0.54em;
   margin-top: 0.24em;
+  padding-left: 25px;
 }
 
 .header__menu > span {
   display: block;
   width: 26px;
   height: 2px;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .header__links {
-  padding-top: 3px;
-  padding-right: 10px;
+  padding-top: 12px;
+  padding-right: 50px;
+  text-align: center;
+  justify-content: center;
 }
 
 .header__links button {
@@ -78,8 +81,8 @@
 
 .header__links a {
   position: relative;
-  font-size: 0.9rem;
-  color: white;
+  font-size: 0.8rem;
+  color: whitesmoke;
 }
 
 .header__links a:not(:last-child) {
@@ -97,7 +100,7 @@
 }
 
 .header__links a:hover {
-  color: red;
+  color: black;
 }
 
 .header__links a:hover::before {
@@ -105,7 +108,7 @@
 }
 
 .header__cta {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: black;
 }
 
@@ -238,7 +241,7 @@ body {
 }
 
 span {
-  background: white !important;
+  background: whitesmoke !important;
   color: black;
 }
 

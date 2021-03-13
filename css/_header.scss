@@ -1,6 +1,6 @@
 .header {
     font-family: 'Square721 BT';
-    background-color: grey;
+    background-color: rgba(51, 51, 51, 0.568);
     color: black;
     margin: 0em;
     nav {
@@ -15,6 +15,7 @@
         left: 0px;
         margin-left: 0.54em;
         margin-top: 0.24em;
+        padding-left: 25px;
     }
     &__menu {
         //mobile MENU
@@ -26,8 +27,10 @@
         }
     }
     &__links {
-        padding-top: 3px;
-        padding-right: 10px;
+        padding-top: 12px;
+        padding-right: 50px;
+        text-align: center;
+        justify-content: center;
         button {
             font-family: 'Shadows Into Light', cursive;
             position: relative;
@@ -36,7 +39,7 @@
         }
         a {
             position: relative;
-            font-size: $font-med;
+            font-size: $font-sm;
             color: $color1;
             &:not(:last-child) {
                 margin-right: 30px;
@@ -51,7 +54,7 @@
                 bottom: -10px;
             }
             &:hover {
-                color: red;
+                color: rgb(0, 0, 0);
                 &::before {
                     background: black;
                 }
@@ -59,7 +62,7 @@
         }
     }
     &__cta {
-        font-size: $font-med;
+        font-size: $font-sm;
         color: $color2;
     }
 }
