@@ -35,6 +35,29 @@
             (o.DocumentTouch && c instanceof DocumentTouch)) &&
             (n.className += t + "touch");
       })(window, document);
+
+      window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
     </script>
 
   </head>
@@ -68,108 +91,47 @@
       <div class="container-h3">
         <div class="block-left-hero">
           <h1 class="hero_heading">
-            Introducing, a dashboard for team management.
+            Next Gen Lab
           </h1>
           <p class="para_white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+            a cutting-edge technology company that specializes in robotics products for automation and centralized control of difficult tasks. <br />
           </p>
-          <div class="button-b2">
-            <div class="text-block-22">Visit flowbase</div>
-            <img
-              src="https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b35135cf279_arrow.svg"
-              width="17"
-              alt=""
-            /><a
-              href="https://webflow.com/website/Cloneable-Saas-Template-CLONE?rfsn=1238427.48b8d"
-              target="_blank"
-              class="link_cover w-inline-block"
-            ></a>
-          </div>
+          <button onclick="smoothScroll(document.getElementById('product'))" class="button-b2">
+            <div class="text-block-22">Learn More</div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="height: 1.3rem;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+          </button>
         </div>
         <div class="block-right-hero">
           <img
-            src="https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b23755cf268_developer-4027337_960_720.png"
+            src="https://img.freepik.com/premium-vector/wind-turbines-solar-panels-sketch-vector_507816-181.jpg?w=360"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, 45vw"
             srcset="
-              https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b23755cf268_developer-4027337_960_720-p-500.png 500w,
-              https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b23755cf268_developer-4027337_960_720.png       788w
+            https://img.freepik.com/premium-vector/wind-turbines-solar-panels-sketch-vector_507816-181.jpg?w=560 500w,
+            https://img.freepik.com/premium-vector/wind-turbines-solar-panels-sketch-vector_507816-181.jpg?w=560       788w
             "
             alt=""
             class="hero_img"
           />
         </div>
       </div>
-      <div class="nav-07">
-        <div class="container-flex-n8">
-          <div class="nav-wrap-left-n7">
-            <a href="#" class="logo-block-n7 w-inline-block"
-              ><img
-                src="https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b100a5cf267_flowbase.png"
-                width="150"
-                alt=""
-            /></a>
-            <div class="nav-wrap-n7 w-hidden-small w-hidden-tiny">
-              <div data-delay="0" data-hover="false" class="w-dropdown">
-                <div class="dropdown-toggle w-dropdown-toggle">
-                  <div class="w-icon-dropdown-toggle"></div>
-                  <div>Platform</div>
-                </div>
-                <nav class="w-dropdown-list">
-                  <a href="#" class="w-dropdown-link">Link 1</a
-                  ><a href="#" class="w-dropdown-link">Link 2</a
-                  ><a href="#" class="w-dropdown-link">Link 3</a>
-                </nav>
-              </div>
-              <a href="#" class="nav-link-n7">Pricing</a>
-              <div data-delay="0" data-hover="false" class="w-dropdown">
-                <div class="dropdown-toggle-2 w-dropdown-toggle">
-                  <div class="w-icon-dropdown-toggle"></div>
-                  <div>Services</div>
-                </div>
-                <nav class="dropdown-n7 w-dropdown-list">
-                  <a href="#" class="w-dropdown-link">Link 1</a
-                  ><a href="#" class="w-dropdown-link">Link 2</a
-                  ><a href="#" class="w-dropdown-link">Link 3</a>
-                </nav>
-              </div>
-              <a href="#" class="nav-link-n7">Resources</a>
-            </div>
-          </div>
-          <div class="nav-wrap-right-n7">
-            <div class="register-wrap-n8">
-              <img
-                src="https://uploads-ssl.webflow.com/5c35b25cdec4808684ce6aef/5c35b74cdec48041acce71db_search.svg"
-                width="15"
-                alt=""
-                class="search-icon-n8"
-              />
-              <div>Search</div>
-              <a href="#" class="link-block-n7 w-inline-block"></a>
-            </div>
-            <a href="#" class="button-n7 w-button">Sign In</a>
-          </div>
-        </div>
-      </div>
+    
     </div>
-    <div class="section_01">
+    <div  id="product" class="section_01">
       <div class="container_p">
-        <div class="col_40">
-          <h1 class="h1_example">Our team works to redefine performance.</h1>
+        <div  class="col_40"> 
+          <h1 class="h1_example">Our team works to redefine Robotics.</h1>
           <p class="paragraph space-below">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Next Gen Lab admires modern problems with high tech technologies & products with IoT equipped. Our solutions are fully customized, equipped, automated, centralisied & easy to operate via smart devices.
           </p>
-          <div class="button-b1">
+          <button onclick="smoothScroll(document.getElementById('solar'))" class="button-b1">
             <div class="text-block-22">Find out more</div>
-            <img
-              src="https://uploads-ssl.webflow.com/5c35b25cdec4808684ce6aef/5c824e3c738ed9e5477f4516_arrow-right.svg"
-              width="17"
-              alt=""
-            />
-          </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="height: 1.3rem;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+            
+          </button>
         </div>
         <div class="col_60">
           <div class="card_row">
@@ -178,18 +140,17 @@
               class="card_base"
             >
               <div class="icon_wrap">
-                <img
-                  src="https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b05fd5cf271_technology.svg"
-                  width="55"
-                  alt=""
-                  class="icon"
-                />
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                </svg>
+                
+              
               </div>
               <div class="card_title_wrap">
-                <h1 class="h1_features-2">Templates<br /></h1>
+                <h1 class="h1_features-2">
+                  Benefits With Us<br /></h1>
                 <div class="text_features">
-                  Flowbase is a collection of curated clonables &amp; guides
-                  from the webflow community
+                  Cleaning & maintaining of solar panel is required to improve efficiency and longer lifespan of pv panels. This can be easily monitorised by our product
                 </div>
               </div>
               <img
@@ -214,18 +175,16 @@
               class="card_base"
             >
               <div class="icon_wrap">
-                <img
-                  src="https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b07055cf26e_cloud.svg"
-                  width="55"
-                  alt=""
-                  class="icon"
-                />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                </svg>
+                
               </div>
               <div class="card_title_wrap">
-                <h1 class="h1_features-2">Templates<br /></h1>
+                <h1 class="h1_features-2">
+                  Sustainable Development<br /></h1>
                 <div class="text_features">
-                  Flowbase is a collection of curated clonables &amp; guides
-                  from the webflow community
+                  Our product is an approach to economic, social, and environmental development that meets the needs of the present generation without compromising the ability of future generations to meet their own needs.
                 </div>
               </div>
               <img
@@ -252,18 +211,15 @@
               class="card_base"
             >
               <div class="icon_wrap">
-                <img
-                  src="https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09bbdd75cf26f_server.svg"
-                  width="55"
-                  alt=""
-                  class="icon"
-                />
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                </svg>
+                
               </div>
               <div class="card_title_wrap">
-                <h1 class="h1_features-2">Templates<br /></h1>
+                <h1 class="h1_features-2">Water Free Cleaning<br /></h1>
                 <div class="text_features">
-                  Flowbase is a collection of curated clonables &amp; guides
-                  from the webflow community
+                  Water-free cleaning can save on water and associated costs, which can be especially important in areas where water is scarce or expensive and eliminates the need for detergents and chemicals and reduces the overall carbon footprint associated with cleaning.
                 </div>
               </div>
               <img
@@ -288,18 +244,16 @@
               class="card_base"
             >
               <div class="icon_wrap">
-                <img
-                  src="https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b2b365cf270_database.svg"
-                  width="55"
-                  alt=""
-                  class="icon"
-                />
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                </svg>
+                
               </div>
               <div class="card_title_wrap">
-                <h1 class="h1_features-2">Templates<br /></h1>
+                <h1 class="h1_features-2">
+                  Easy To Use and Operated<br /></h1>
                 <div class="text_features">
-                  Flowbase is a collection of curated clonables &amp; guides
-                  from the webflow community
+                  We can easily operate and monitorisethe product via smart devices
                 </div>
               </div>
               <img
@@ -323,10 +277,10 @@
         </div>
       </div>
     </div>
-    <div class="section_01">
+    <div id="solar" class="section_01">
       <div class="container-co2">
         <div class="content-left-co2">
-          <h1 class="h1_example">Our team works to redefine performance.</h1>
+          <h1 class="h1_example">Our Services</h1>
           <div class="check-wrap-co2">
             <div class="check-co2">
               <img
@@ -378,12 +332,12 @@
         </div>
         <div class="content-right-co2">
           <img
-            src="https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b1eb65cf274_developer-4027334_960_720.png"
+            src="https://avalondp.com/image/service_image.png"
             width="510"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 46vw, 45vw"
             srcset="
-              https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b1eb65cf274_developer-4027334_960_720-p-500.png 500w,
-              https://uploads-ssl.webflow.com/641f53696bd09bacac5cf25a/641f53696bd09b1eb65cf274_developer-4027334_960_720.png       788w
+            https://avalondp.com/image/service_image.png 500w,
+            https://avalondp.com/image/service_image.png       788w
             "
             alt=""
             class="image-14"
