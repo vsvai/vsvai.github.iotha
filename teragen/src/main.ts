@@ -1,17 +1,14 @@
-import "./style.css";
+import "./views/components/main.ts";
+
 import typescriptLogo from "./typescript.svg";
 import viteLogo from "/vite.svg";
 import consoleLogo from "/svg/console.svg";
 import { setupCounter } from "./counter";
-import home from "./views/home.html?raw";
-import { footbar, main, navbar } from "./views/components/index";
-// import home from "./views/home";
-
+import home from "./views/index.html?raw";
+import "./style.css";
+console.log(home)
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = home;
 
-document.querySelector<HTMLDivElement>("#navbar")!.innerHTML = navbar;
-document.querySelector<HTMLDivElement>("#main")!.innerHTML = main;
-document.querySelector<HTMLDivElement>("#footbar")!.innerHTML = footbar;
 
 document.querySelector<HTMLAnchorElement>("#consoleLogo")!.innerHTML = `<div>
     <a href="https://vitejs.dev" target="_blank">

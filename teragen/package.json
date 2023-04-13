@@ -13,6 +13,9 @@
     "vite": "^4.2.1"
   },
   "dependencies": {
-    "path": "^0.12.7"
+    "autoprefixer": "^10.4.14",
+    "path": "^0.12.7",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-imagemin": "^0.6.1"
   }
 }

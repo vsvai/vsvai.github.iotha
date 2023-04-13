@@ -1,4 +1,10 @@
 import { defineConfig } from "vite";
+import autoprefixer from 'autoprefixer';
+import compress from 'vite-plugin-compression';
+import imageMin from 'vite-plugin-imagemin'
+
+const isProd = process.env.NODE_ENV === 'production';
+
 
 // vite.config.js
 const htmlImport = {
@@ -12,21 +18,38 @@ const htmlImport = {
    */
   transform(code, id) {
     if (/^.*\.html$/g.test(id)) {
-      code = `export default \`${code}\``;
+      code = `\`${code}\``;
     }
     return { code };
   },
 };
 export default defineConfig({
-  plugins: [htmlImport],
-  optimizeDeps: {
-    include: ["linked-dep"],
-  },
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {},
-      },
+  css: {
+    postcss: {
+      plugins: [
+         autoprefixer(),
+      ],
     },
+  },
+  plugins: [htmlImport,  
+    imageMin({
+    svgo: {
+      // https://github.com/svg/svgo#built-in-plugins
+      plugins: [
+        { name: 'RemoveTitle', active: false },
+        { name: 'RemoveDescription', active: false },
+        { name: 'RemoveViewBox', active: false },
+        { name: 'removeDimensions', active: true },
+        { name: 'removeScriptElement', active: true },
+        { name: 'removeStyleElement', active: true },
+      ],
+    },
+  }),
+  compress({
+    algorithm: 'brotliCompress',
+  }),
+],
+  build: {
+    minify: isProd,
   },
 });
